@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: rgba(241, 241, 241, 0.6);
+}
+
+ul {
+    padding-left: 0;
+}
+
+p {
+    font-size: 24px;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #424242;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 117px;
+    height: 117px;
+}
+
+.individual-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px 0 100px;
+    color: #FFD366;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.height,
+.weight {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 3px solid #FFD366;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #8b8888;
+}
+
+
+/* 初始按鈕狀態 */
+
+.send {
+    width: 120px;
+    height: 120px;
+    background: #FFD366;
+    /* color: #424242; */
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* 不同結果狀態顏色 */
+
+.ideal_color {
+    color: #86D73F;
+}
+
+.ideal_border_color {
+    border-color: #86D73F;
+}
+
+.ideal_bgcolor {
+    background: #86D73F;
+}
+
+.too_light_color {
+    color: #31BAF9;
+}
+
+.too_light_border_color {
+    border-color: #31BAF9;
+}
+
+.too_light_bgcolor {
+    background: #31BAF9;
+}
+
+.overweight_color {
+    color: #FF982D;
+}
+
+.overweight_border_color {
+    border-color: #FF982D;
+}
+
+.overweight_bgcolor {
+    background: #FF982D;
+}
+
+.mild_obesity_color {
+    color: #FF6C03;
+}
+
+div.mild_obesity_color {
+    right: -160px;
+}
+
+.mild_obesity_border_color {
+    border-color: #FF6C03;
+}
+
+.mild_obesity_bgcolor {
+    background: #FF6C03;
+}
+
+.moderate_obesity_color {
+    color: #FF6C03;
+}
+
+div.moderate_obesity_color {
+    right: -160px;
+}
+
+.moderate_obesity_border_color {
+    border-color: #FF6C03;
+}
+
+.moderate_obesity_bgcolor {
+    background: #FF6C03;
+}
+
+.severe_obesity_color {
+    color: #FF1200;
+}
+
+div.severe_obesity_color {
+    right: -160px;
+}
+
+.severe_obesity_border_color {
+    border-color: #FF1200;
+}
+
+.severe_obesity_bgcolor {
+    background: #FF1200;
+}
+
+.ideal_boL {
+    border-left: 7px solid #86D73F;
+}
+
+.too_light_boL {
+    border-left: 7px solid #31BAF9;
+}
+
+.overweight_boL {
+    border-left: 7px solid #FF982D;
+}
+
+.mild_obesity_boL {
+    border-left: 7px solid #FF6C03;
+}
+
+.moderate_obesity_boL {
+    border-left: 7px solid #FF6C03;
+}
+
+.severe_obesity_boL {
+    border-left: 7px solid #FF1200;
+}
+
+
+/* 送出資料後的按鈕外觀 */
+
+.send-end {
+    padding-top: 15px;
+    border: 6px solid;
+    background: #424242;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.button-show {
+    position: relative;
+}
+
+.button-num {
+    font-size: 32px;
+}
+
+.button-judge {
+    position: absolute;
+    right: -90px;
+    bottom: 15px;
+    font-size: 32px;
+}
+
+.arrow-icon>img {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: -5px;
+    bottom: -18px;
+}
+
+.again {
+    width: 120px;
+    height: 120px;
+    background: #FFD366;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 150px;
+    border: none;
+}
+
+
+/* 顯示內容 */
+
+.content {
+    padding: 50px 0;
+}
+
+.record-content {
+    width: 800px;
+}
+
+h2.title {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3.title {
+    padding-right: 10px;
+}
+
+.record {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+li.record>div {
+    width: 15%;
+}
+
+.info-b,
+.info-w,
+.info-h {
+    display: flex;
+    align-items: center;
+}
+
+input[type="button"] {
+    background-color: rgb(245, 149, 149);
+    border: none;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.judge {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+#footer {
+    background-color: #FFD366;
+    padding: 40px 0;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-logo>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
