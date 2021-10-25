@@ -40,13 +40,15 @@ function calculate(e) {
             addRelateInfo(BMI);
         }
 
-        // 輸入 input 的數字清空
-        height.value = "";
-        weight.value = "";
+         // 輸入 input 的數字清空
+    height.value = "";
+    weight.value = "";
 
-        time();
-
-    }
+    time();
+    send.classList.add("hide");
+  } else if (e.target.textContent === "再測一次") {
+    domButtonRender("reset");
+  }
 }
 // bmi輕重判斷
 function judgeBMI(BMI) {
